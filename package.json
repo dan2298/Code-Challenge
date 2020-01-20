@@ -1,0 +1,24 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^5.18.6",
+    "@wdio/local-runner": "^5.18.6",
+    "@wdio/mocha-framework": "^5.18.6",
+    "@wdio/spec-reporter": "^5.18.6",
+    "@wdio/sync": "^5.18.6",
+    "chromedriver": "^79.0.0",
+    "wdio-chromedriver-service": "^5.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "chai": "^4.2.0"
+  }
+}
