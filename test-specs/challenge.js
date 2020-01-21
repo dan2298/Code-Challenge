@@ -1,4 +1,3 @@
-const assert = require('assert')
 const axios = require('axios')
 
 describe('Scenario 1: Darksky UI temperature is equal to API temperature', () => {
