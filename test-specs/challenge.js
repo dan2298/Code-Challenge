@@ -13,16 +13,12 @@ describe('Scenario 1: Darksky UI temperature is equal to API temperature', () =>
         //search 10001 and grab temperature at location
         const searchButton = $('form .searchButton')
         const searchInput = $('form input')
-        temp = $('.summary.swap').getText()
         searchInput.clearValue()
         searchInput.addValue('10001')
         searchButton.click()
 
         //wait until new temperature loads
-        browser.waitUntil(() => {
-            return $('.summary.swap').getText() !== temp
-        }, 5000);
-
+        $('.summary.swap').waitForExist(2000)
         tempUI = $('.summary.swap').getText()
         tempUI = Number(tempUI.slice(0, tempUI.indexOf('˚')))
 
